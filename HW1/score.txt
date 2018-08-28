@@ -1,0 +1,53 @@
+Functionality:
+Output is 80 characters, followed by a carriage-return, partial lines ignored, no lines skipped:
+	5/5
+Ctrl-D ends the program:
+	5/5
+Program works with large inputs:
+	5/5
+If EOF is 80th character, last line is not outputted:
+	5/5
+Newlines become blanks:
+	5/5
+If Newline is 80th character, the last character in the line is blank:
+	2/2
+If Newline is 1st character, the first character in the line is a blank:
+	2/2
+If Newline is 79th or 81th character, the program handles this correctly:
+	2/2
+** gets squashed into ^:
+	2/2
+Output is still 80 characters if there are *s in the line:
+	4.0/4
+** is 80th & 81st characters, the program waits for the 81st character and ends the outputted line with a ^:
+	5/5
+* is 80th character and EOF 81st character:
+	4/4
+* is 80th character, non-* is 81st character, the line ends with a *:
+	2/2
+160 *s become 1 line of ^s:
+	2/2
+Total: 50.0/50
+
+Style:
+Appropriate text formatting:
+	5/5
+Array sizes are constants, not hardcoded:
+	0/5
+Effective and correct use of C constructs:
+	5/5
+Programmer describes function of program:
+	4/5
+Programmer includes comments at important junctures in code:
+	8/10
+Programmer describes invariants, pre-and post conditions for loops and procedures:
+	4/5
+Total: 26/35
+
+Notes: This was a relatively straightforward program, so comments weren't really necessary, but in the future try to at least have a comment describing the entire program and one for each function
+Things to look out for in the future (style-wise):
+Send email to my cs.unc.edu email, not my live email
+Include your cs login in the body of the email
+Free things that you malloc
+Check pointer from malloc for null
+Main method should have return type int and should explicitly return an int (0 for no errors)

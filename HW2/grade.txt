@@ -1,0 +1,33 @@
+General command:
+	10/10
+White spaces and tabs in arguments:
+	10/10
+Handles arbitrary behavior of the child process:
+	10/10
+Large number of arguments:
+	0/12
+Long arguments and non-ASCII characters:
+	12/12
+Invalid file name:
+	10/10
+Shell terminates on EOF/ctrl-D:
+	10/10
+Appropriate text formatting:
+	5/5
+Array sizes are constants, not hardcoded:
+	5/5
+Effective and correct use of C constructs:
+	5/5
+Programmer describes function of program:
+	3/7
+Programmer includes comments at important junctures in code:
+	7/7
+Programmer describes invariants, pre- and post-conditions for loops and procedures:
+	7/7
+Signal handling:
+	10/10
+Path processing:
+	10/10
+Uses stat to check for file:
+	5/5
+119/110
